@@ -11,6 +11,9 @@ def process_json_file(filepath):
                 process_tweet(tweet)
 
 def process_tweet(tweet):
+    if tweet.get('lang') != 'en':
+        return
+    
     user_info = tweet.get('user', {})
     username = user_info.get('screen_name')
     
