@@ -15,7 +15,7 @@ In the case you want to run the project by a console you will need to navigate a
 cd Chirp
 ```
 
-We assume here you already have a version of Python and so you can install some package that are listed in the *requirement.txt*
+We assume here you already have a version of Python and so you can install some package that are listed in the *requirements.txt*
 
 ```
 pip install -r requirements.txt
