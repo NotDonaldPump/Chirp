@@ -1,6 +1,7 @@
 # Chirp
 
-This project was realised by Loïc Christen and Alexandre Venturi
+This project was realised by Loïc Christen and Alexandre Venturi.
+This is a minimalist version of X.
 
 To run this project you first need to clone the repository on your device with a git clone 
 
@@ -20,9 +21,14 @@ We assume here you already have a version of Python and so you can install some 
 pip install -r requirements.txt
 ```
 
-Then you will need to run two python files : 'populate_database.py' and next 'redis_model.py'
+You will need to have a Redis server running, and you must add a folder named "data" at the root of the project. In this folder, you should place JSON files containing tweets in the standard Twitter format. Then you can run populate_database.py.
 
 ```
 python chirp/populate_database.py
-python chirp/redis_model.py
+```
+
+Finally, you can run our web app ./chirp/web_app.py
+
+```
+streamlit run ./chirp/web_app.py
 ```
